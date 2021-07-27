@@ -1,0 +1,29 @@
+
+
+<html>
+<head>Cypress tests autos</head>
+
+<body>
+
+<h1> Cypress </h1>
+
+
+<p>Nom du message:&nbsp;[[=Message.MessageName;]]</p>
+
+<br />
+
+
+<p>ID: [[=Contact.idContact;]]</p><br />
+<p>Email: [[=Contact.f_EMail;]]</p><br />
+<p>Tests autos: Regression/ happy_path /5_mtl_create_send_email_qa_sans_email_key.js</p>
+
+<a href="[[=Message.Optout("fr-CA");]]">D&eacute;sabonne-moi</a><br />
+
+<br />
+
+[[if(Config.isShowMessage == 0 && Config.hasTrackingConsent == 1){]]<a href="[[=Message.WebVersion(true);]]">Voici lien version web</a>[[}]]<br />
+
+
+
+</body>
+</html>
