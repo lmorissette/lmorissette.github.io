@@ -5,13 +5,15 @@
     <title>Mon super site web</title>
     <link rel="icon"  type="image/png"    href="img/logo.png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-     <link rel="stylesheet" href="css/Resetstyle.css" />
-     <link rel="stylesheet" href="css/MyStyle.css" />
-       <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">     
-       <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-        <script src="https://use.fontawesome.com/7db312eaa6.js"></script>
-        <!-- bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon"  type="image/png"    href="images/TechnicalDI.png">
+      <link rel="stylesheet" media="screen" type="text/css" href="normalize.css" />
+      <link rel="stylesheet"  type="text/css" href="css/MyStyle.css" />     
+      
+      <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Ruluko" rel="stylesheet">
+      <script src="https://use.fontawesome.com/7db312eaa6.js"></script>
+      <!-- bootstrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -22,20 +24,19 @@
 
     <nav class="flex-container">  			     
 	    <ul class="flex-item">
-	      <li><a href="MyIndex.html"><i class="fa fa-home" aria-hidden="true"></i>Accueil</a></li>
-	      <li><a href="#apropos"><i class="fa fa-users" aria-hidden="true"></i>QA Outils</a></li>      
-	      <li><a href="Tools.html"><i class="fa fa-wrench" aria-hidden="true"></i>Outils/Tools</a></li>
+	      <li><a href="CypressTest.html"><i class="fa fa-home" aria-hidden="true"></i>Accueil</a></li>	    
 	      
 	    </ul>
     </nav>
-    <!-- Bannière -->
-    <section class="banner">
-        <!--img class="logo" src="images/logo.png" alt="logo" /-->
-        
-        <p>Bonjour la vie</p>
-    </section>
+   
+   
   </header>
-  <section id="ditools" class="ditools">
+
+     <!-- Section   bootstrap 3 x 4=12 (3colonnes) -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <section class="formulaire">
 <div class="row">
   <div class="col-md-12">
     <nb-card class="inline-form-card">
@@ -89,6 +90,12 @@
       </nb-card-body>
     </nb-card>
   </section>
+</section>
+</div>
+
+<div class="col-sm-4">
+  <section class="formulaire">
+
   <section id="services" class="services box">
     <nb-card>
       <nb-card-header>Form without labels</nb-card-header>
@@ -166,7 +173,12 @@
     </nb-card>
   </div>
 </div>
-
+</section>
+</div>
+<div class="col-sm-4">
+  <section class="formulaire">
+      <h2> Formation </h2>
+      <ul>
 <div class="row">
   <div class="col-md-6">
     <nb-card>
@@ -202,6 +214,8 @@
     </nb-card>
   </div>
 </div>
+</ul>
+</section>
   <!-- Footer -->
   <footer id="contact" class="contact box">
     <h5 >@Copyright 2021</h5>
