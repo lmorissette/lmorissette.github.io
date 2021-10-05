@@ -25,16 +25,6 @@
  .url        { font-size: 8pt; font-family: Verdana, Tahoma, Arial }
  .link       { padding: 3px; width: 100%; BACKGROUND: #FFEEDD; BORDER-BOTTOM: #FFCC99 3px solid; BORDER-LEFT: #FFFFFF 3px solid; BORDER-RIGHT: #FFCC99 3px solid; BORDER-TOP: #FFFFFF 3px solid; COLOR: #990000; font-size: 9pt; font-family: Verdana; font-weight: bold }
 
-P
-{
-    COLOR: ivory
-}
-H1
-{
-    FONT-SIZE: 14pt;
-    COLOR: white;
-    FONT-FAMILY: 'Courier New'
-}
 H2
 {
     FONT-SIZE: 12pt;
@@ -147,5 +137,10 @@ TH
     HEIGHT: 22px;
     BACKGROUND-COLOR: #4169e1
 }
+   
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;} 
+
 
 
