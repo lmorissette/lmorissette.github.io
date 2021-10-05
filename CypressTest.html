@@ -31,18 +31,11 @@
         </nav>
     </header>
      
-     <!-- Section   bootstrap 3 x 4=12 (3colonnes) -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                 <h2> Formulaire </h2>
-                  <ul class="ul_Outils">
-                <section class="formulaire">
-                <div class="row">
-                <div class="col-md-12">
-                <nb-card class="inline-form-card">
-                <nb-card-header><b>Inline form</b></nb-card-header>
-                <nb-card-body>
+    <div class="row">
+  <div class="col-md-12">
+    <nb-card class="inline-form-card">
+      <nb-card-header>Inline form</nb-card-header>
+      <nb-card-body>
         <form class="form-inline">
           <input type="text" nbInput fullWidth placeholder="Jane Doe">
           <input type="text" nbInput fullWidth placeholder="Email">
@@ -53,33 +46,27 @@
     </nb-card>
   </div>
 </div>
-</ul>
 
- <div class="container">
-        <div class="row">
-      <ul class="ul_Outils">      
 <div class="row">
   <div class="col-md-6">
     <nb-card>
-      <br>
-      <br>
       <nb-card-header>Using the Grid</nb-card-header>
       <nb-card-body>
         <form>
           <div class="form-group row">
-            <label for="inputEmail1" >Email</label>
+            <label for="inputEmail1" class="label col-sm-3 col-form-label">Email</label>
             <div class="col-sm-9">
               <input type="email" nbInput fullWidth id="inputEmail1" data-cy="imputEmail1" placeholder="Email">
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputPassword2" >Password</label>
+            <label for="inputPassword2" class="label col-sm-3 col-form-label">Password</label>
             <div class="col-sm-9">
               <input type="password" nbInput fullWidth id="inputPassword2" placeholder="Password">
             </div>
           </div>
           <div class="form-group row">
-            <label >Radios</label>
+            <label class="col-sm-3 label">Radios</label>
             <div class="col-sm-9">
               <nb-radio-group>
                 <nb-radio>Option 1</nb-radio>
@@ -90,22 +77,15 @@
           </div>
           <div class="form-group row">
             <div class="offset-sm-3 col-sm-9">
-              <button type="submit" nbButton status="primary" data-cy="signInButton">Sign in</button>
+              <button type="submit" nbButton status="primary">Sign in</button>
             </div>
           </div>
         </form>
       </nb-card-body>
     </nb-card>
-  </section>
-</section>
-</div>
-  </ul>
-<div class="col-sm-4">
-  <section class="formulaire">
 
-  <section id="services" class="services box">
     <nb-card>
-      <nb-card-header><b>Form without labels</b></nb-card-header>
+      <nb-card-header>Form without labels</nb-card-header>
       <nb-card-body>
         <form>
           <div class="form-group">
@@ -123,20 +103,17 @@
     </nb-card>
   </div>
 
-<br>
-<br>
   <div class="col-md-6">
     <nb-card>
-      <br>
-      <nb-card-header><b>Basic form<b></nb-card-header>
+      <nb-card-header>Basic form</nb-card-header>
       <nb-card-body>
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1" >Email address</label>
+            <label for="exampleInputEmail1" class="label">Email address</label>
             <input type="email" nbInput fullWidth id="exampleInputEmail1" placeholder="Email">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1" >Password</label>
+            <label for="exampleInputPassword1" class="label">Password</label>
             <input type="password" nbInput fullWidth id="exampleInputPassword1" placeholder="Password">
           </div>
           <div class="form-group">
@@ -146,22 +123,20 @@
         </form>
       </nb-card-body>
     </nb-card>
-  
 
-  <br>
     <nb-card>
       <nb-card-header>Block form</nb-card-header>
       <nb-card-body>
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="inputFirstName" >First Name</label>
+              <label for="inputFirstName" class="label">First Name</label>
               <input type="text" nbInput fullWidth id="inputFirstName" placeholder="First Name">
             </div>
           </div>
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="inputLastName" >Last Name</label>
+              <label for="inputLastName" class="label">Last Name</label>
               <input type="text" nbInput fullWidth id="inputLastName" placeholder="Last Name">
             </div>
           </div>
@@ -169,13 +144,13 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="inputEmail" >Email</label>
+              <label for="inputEmail" class="label">Email</label>
               <input type="email" nbInput fullWidth id="inputEmail" placeholder="Email">
             </div>
           </div>
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="inputWebsite" >Website</label>
+              <label for="inputWebsite" class="label">Website</label>
               <input type="text" nbInput fullWidth id="inputWebsite" placeholder="Website">
             </div>
           </div>
@@ -185,30 +160,21 @@
     </nb-card>
   </div>
 </div>
-</section>
-</div>
 
-            <div class="col-sm-4">
-                <section class="formulaire">
-                   
-                    <ul class="ul_Outils">
- 
-    
-      
 <div class="row">
   <div class="col-md-6">
     <nb-card>
-      <nb-card-header><b>Horizontal form</b></nb-card-header>
+      <nb-card-header>Horizontal form</nb-card-header>
       <nb-card-body>
         <form class="form-horizontal">
           <div class="form-group row">
-            <label for="inputEmail3" >Email</label>
-         
+            <label for="inputEmail3" class="label col-sm-3 form-control-label">Email</label>
+            <div class="col-sm-9">
               <input type="email" nbInput fullWidth id="inputEmail3" placeholder="Email">
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputPassword3" >Password</label>
+            <label for="inputPassword3" class="label col-sm-3 form-control-label">Password</label>
             <div class="col-sm-9">
               <input type="password" nbInput fullWidth id="inputPassword3" placeholder="Password">
             </div>
@@ -230,7 +196,7 @@
     </nb-card>
   </div>
 </div>
-</ul>
+
 
   <section id="child">  
     <ul>
