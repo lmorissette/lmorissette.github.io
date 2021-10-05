@@ -2,35 +2,29 @@
 
 <html>
 <head>
-    <title>Mon super site web</title>
-    <link rel="icon"  type="image/png"    href="https://lmorissette.github.io/img/logo.png">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="icon"  type="image/png"    href="https://lmorissette.github.io/Images/ski.png">
-      <link rel="stylesheet" media="screen" type="text/css" href="normalize.css" />
-      <link rel="stylesheet"  type="text/css" href="https://lmorissette.github.io/Css/MyStyle.css" />     
-      
-      <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-      <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Ruluko" rel="stylesheet">
-      <script src="https://use.fontawesome.com/7db312eaa6.js"></script>
-      <!-- bootstrap-->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Formation Cypress site web</title>
+     
+     <link rel="icon" type="image/png" href="https://www.dialoginsight.com/wp-content/themes/nubee/library/favicon/favicon-32x32.png">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="pingback" href="https://www.dialoginsight.com/xmlrpc.php">
+
+    <link rel="stylesheet" href="https://lmorissette.github.io/css/Resetstyle.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <script src="https://use.fontawesome.com/7db312eaa6.js"></script>
+  <!-- bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
   <header>
     <!-- Menu -->
-    <h1  id="HautdePage"></h1>
-
-<<<<<<< HEAD
-  
-=======
->>>>>>> b9c77e7db625b941925f428851d58b5be428791f
-   
+    <h1  id="HautdePage"></h1> 
    
   </header>
 
-     <!-- Section   bootstrap 3 x 4=12 (3colonnes) -->
+     
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -38,7 +32,7 @@
 <div class="row">
   <div class="col-md-12">
     <nb-card class="inline-form-card">
-      <nb-card-header>Inline form</nb-card-header>
+      <nb-card-header><b>Inline form</b></nb-card-header>
       <nb-card-body>
         <form class="form-inline">
           <input type="text" nbInput fullWidth placeholder="Jane Doe">
@@ -54,6 +48,8 @@
 <div class="row">
   <div class="col-md-6">
     <nb-card>
+      <br>
+      <br>
       <nb-card-header>Using the Grid</nb-card-header>
       <nb-card-body>
         <form>
@@ -81,7 +77,7 @@
           </div>
           <div class="form-group row">
             <div class="offset-sm-3 col-sm-9">
-              <button type="submit" nbButton status="primary">Sign in</button>
+              <button type="submit" nbButton status="primary" data-cy="signInButton">Sign in</button>
             </div>
           </div>
         </form>
@@ -96,7 +92,7 @@
 
   <section id="services" class="services box">
     <nb-card>
-      <nb-card-header>Form without labels</nb-card-header>
+      <nb-card-header><b>Form without labels</b></nb-card-header>
       <nb-card-body>
         <form>
           <div class="form-group">
@@ -114,9 +110,12 @@
     </nb-card>
   </div>
 
+<br>
+<br>
   <div class="col-md-6">
     <nb-card>
-      <nb-card-header>Basic form</nb-card-header>
+      <br>
+      <nb-card-header><b>Basic form<b></nb-card-header>
       <nb-card-body>
         <form>
           <div class="form-group">
@@ -134,7 +133,9 @@
         </form>
       </nb-card-body>
     </nb-card>
-  </section>
+  
+
+  <br>
     <nb-card>
       <nb-card-header>Block form</nb-card-header>
       <nb-card-body>
@@ -174,13 +175,13 @@
 </section>
 </div>
 <div class="col-sm-4">
-  <section class="formulaire">
-      <h2> Formation </h2>
+ 
+    
       <ul>
 <div class="row">
   <div class="col-md-6">
     <nb-card>
-      <nb-card-header>Horizontal form</nb-card-header>
+      <nb-card-header><b>Horizontal form</b></nb-card-header>
       <nb-card-body>
         <form class="form-horizontal">
           <div class="form-group row">
@@ -213,7 +214,29 @@
   </div>
 </div>
 </ul>
-</section>
+
+  <section id="child">  
+    <ul>
+  <li>About</li>
+  <li>
+    Services
+    <ul class="secondary-nav">
+      <li class="services-1">Web Design</li>
+      <li class="services-2">Logo Design</li>
+      <li class="services-3">
+        Print Design
+        <ul class="tertiary-nav">
+          <li>Signage</li>
+          <li>T-Shirt</li>
+          <li>Business Cards</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Contact</li>
+</ul>
+      </section>
+      <br>
   <!-- Footer -->
   <footer id="contact" class="contact box">
     <h5 >@Copyright 2021</h5>
