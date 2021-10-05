@@ -142,5 +142,7 @@ body {background-color: powderblue;}
 h1   {color: blue;}
 p    {color: red;} 
 
-
+nb-checkbox {
+  margin-bottom: 1rem;
+}
 
