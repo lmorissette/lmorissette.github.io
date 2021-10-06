@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8"/>
+
+	<title>Test Parcour</title>
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+	
+	<script>
+	window.addEventListener("load", function(){
+
+		document.getElementById("divCheckConsent").innerHTML = DI.Journey.CheckConsent ? "Configuration ACTIVE" : "Confirguration INACTIVE";
+	
+	//how to completely clear sessionstorage
+		localStorage.clear();
+		
+	window.cookieconsent.initialise({
+	  "palette": {
+		"popup": {
+		  "background": "#000"
+		},
+		"button": {
+		  "background": "#f1d600"
+		}
+	  },
+	  "showLink": false,
+	  "type": "opt-out",
+	onInitialise: function (status) {
+	  var type = this.options.type;
+	  var didConsent = this.hasConsented();
+	  if (type == 'opt-in' && didConsent) {
+		OFSYS_Tracker2.SetConsent(true);
+	  }
+	  if (type == 'opt-out' && !didConsent) {
+		OFSYS_Tracker2.SetConsent(false);
+	  }
+	},
+ 
+	onStatusChange: function(status, chosenBefore) {
+	  var didConsent = this.hasConsented();
+		OFSYS_Tracker2.SetConsent(didConsent);
+
+	},
+ 
+	onRevokeChoice: function() {
+	  var type = this.options.type;
+	  if (type == 'opt-in') {
+		OFSYS_Tracker2.SetConsent(true);
+	  }
+	  if (type == 'opt-out') {
+		OFSYS_Tracker2.SetConsent(false);
+	  }
+	}
+	})});
+	</script>
+
+</head>
+
+<body>
+	<script type="text/javascript" src="http://t.dev-sc.hq2.rep/js/Journey/1/AQAAADEyMzQ1NosDAAB5RzRVWEF7AgAA/DI.Journey-min.js"></script>
+
+	<h1>AQAAADEyMzQ1NosDAAB5RzRVWEF7AgAA</h1>
+	<p>  ID Site 635  Test Cookies Track </p>
+
+
+
+	<form method="post" action="./" id="form1">
+		<div >
+			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="F+a03SJew5hQ/5a/iR7zP53qOlCUmg97J+bBtUloiUxebk07ccxObLynJNJ/5CaRlVyGPnPQJz6w4XGi3WhcjTfmQZg0rgfiaidcozlwg4w=" />
+		</div>
+
+		<div class="aspNetHidden">
+
+			<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+		</div>
+		<br />
+		<div >
+			 <p > Résultat Consentement:  <h3 id="divCheckConsent" > </h3> </p>
+
+			<a href="http://temp.repsolution-interactive.com/lmorissette/hello.html">Page 2</a> <br />
+
+    	</div>   
+
+	</form>
+
+	
+
+	
+</body>
+</html>
