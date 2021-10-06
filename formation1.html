@@ -1,44 +1,26 @@
 <!DOCTYPE html>
 
 <html>
-<head>
+<head>    
     <title>Formation Cypress site web</title>
      
-     <link rel="icon" type="image/png" href="https://www.dialoginsight.com/wp-content/themes/nubee/library/favicon/favicon-32x32.png">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="pingback" href="https://www.dialoginsight.com/xmlrpc.php">
+     
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+    
+   <link rel="stylesheet" media="screen" type="text/css" href="Css/main.css" /> 
 
-
-    <link rel="stylesheet" href="https://lmorissette.github.io/css/Resetstyle.css" />
-     <link rel="stylesheet" href="https://lmorissette.github.io/css/MyStyle.css" /> 
-
-   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Ruluko" rel="stylesheet">
-    <script src="https://use.fontawesome.com/7db312eaa6.js"></script>
-    <!-- bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+    
+<body>  
+  <header>
+    <!-- Menu -->
+    <h1  id="HautdePage"></h1> 
+   
+  </header>
 
- <header>
-        <!-- Menu -->
-        <h1 id="HautdePage"></h1>
-        <nav class="flex-container">
-            <ul class="flex-item">
-                <li><a href="https://lmorissette.github.io/qa_mtl.html"><i class="fa fa-home" aria-hidden="true"></i>Accueil</a></li>
-               
-            </ul>
-        </nav>
-    </header>
-  <section class="formulaire">
-                    <h2> Outils HTML CSS </h2>
-
-                    <ul class="ul_Outils">     
-<div class="row">
-  <div class="col-sm-4">
-        
+     
+    <div class="row" >
+  <div class="col-md-12">
     <nb-card class="inline-form-card">
       <nb-card-header>Inline form</nb-card-header>
       <nb-card-body>
@@ -52,24 +34,21 @@
     </nb-card>
   </div>
 </div>
-  </ul>
-        
-        </section>
-        
+
 <div class="row">
-  <div class="col-sm-4">
+  <div class="col-md-6">
     <nb-card>
       <nb-card-header>Using the Grid</nb-card-header>
       <nb-card-body>
         <form>
           <div class="form-group row">
-            <label for="inputEmail1" class="label col-sm-3 col-form-label">Email</label>
+            <label for="inputEmail1" class="contact">Email</label>
             <div class="col-sm-9">
               <input type="email" nbInput fullWidth id="inputEmail1" data-cy="imputEmail1" placeholder="Email">
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputPassword2" class="label col-sm-3 col-form-label">Password</label>
+            <label for="inputPassword2" class="contact">Password</label>
             <div class="col-sm-9">
               <input type="password" nbInput fullWidth id="inputPassword2" placeholder="Password">
             </div>
@@ -96,8 +75,8 @@
     <nb-card>
       <nb-card-header>Form without labels</nb-card-header>
       <nb-card-body>
-        <form>
-          <div class="form-group">
+        <form id="services">
+          <div class="form-group" >
             <input type="text" nbInput fullWidth placeholder="Recipients">
           </div>
           <div class="form-group">
@@ -112,7 +91,7 @@
     </nb-card>
   </div>
 
-  <div class="col-sm-4">
+  <div class="col-md-6">
     <nb-card>
       <nb-card-header>Basic form</nb-card-header>
       <nb-card-body>
@@ -126,10 +105,8 @@
             <input type="password" nbInput fullWidth id="exampleInputPassword1" placeholder="Password">
           </div>
           <div class="form-group">
-             <input _ngcontent-yxd-c20 class="native-input visually-hidden" type="checkbox">
-             <span _ngcontent-yxd-c20 class="custom-checkbox checked">...</span>
-             <span _ngcontent-yxd-c20 class="text">Check me out</span>
             <nb-checkbox>Check me out</nb-checkbox>
+            
           </div>
           <button type="submit" nbButton status="danger">Submit</button>
         </form>
@@ -140,13 +117,13 @@
       <nb-card-header>Block form</nb-card-header>
       <nb-card-body>
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="form-group">
               <label for="inputFirstName" class="label">First Name</label>
               <input type="text" nbInput fullWidth id="inputFirstName" placeholder="First Name">
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="form-group">
               <label for="inputLastName" class="label">Last Name</label>
               <input type="text" nbInput fullWidth id="inputLastName" placeholder="Last Name">
@@ -154,13 +131,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="form-group">
               <label for="inputEmail" class="label">Email</label>
               <input type="email" nbInput fullWidth id="inputEmail" placeholder="Email">
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="form-group">
               <label for="inputWebsite" class="label">Website</label>
               <input type="text" nbInput fullWidth id="inputWebsite" placeholder="Website">
@@ -174,7 +151,7 @@
 </div>
 
 <div class="row">
-  <div class="col-sm-4">
+  <div class="col-md-6">
     <nb-card>
       <nb-card-header>Horizontal form</nb-card-header>
       <nb-card-body>
@@ -209,7 +186,6 @@
   </div>
 </div>
 
-
   <section id="child">  
     <ul>
   <li>About</li>
@@ -237,5 +213,7 @@
     <h5 >@Copyright 2021</h5>
      
   </footer>
+    
+
 </body>
 </html>
