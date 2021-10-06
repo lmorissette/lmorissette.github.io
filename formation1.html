@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-
-<html>
-<head>    
-    <title>Formation Cypress site web</title>
-     
-     
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
-    
-   <link rel="stylesheet" media="screen" type="text/css" href="Css/main.css" /> 
-
-</head>
-    
-<body>  
-  <header>
-    <!-- Menu -->
-    <h1  id="HautdePage"></h1> 
-   
-  </header>
-
-     
-    <div class="row" >
+<div class="row">
   <div class="col-md-12">
     <nb-card class="inline-form-card">
       <nb-card-header>Inline form</nb-card-header>
@@ -42,13 +21,13 @@
       <nb-card-body>
         <form>
           <div class="form-group row">
-            <label for="inputEmail1" class="contact">Email</label>
+            <label for="inputEmail1" class="label col-sm-3 col-form-label">Email</label>
             <div class="col-sm-9">
               <input type="email" nbInput fullWidth id="inputEmail1" data-cy="imputEmail1" placeholder="Email">
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputPassword2" class="contact">Password</label>
+            <label for="inputPassword2" class="label col-sm-3 col-form-label">Password</label>
             <div class="col-sm-9">
               <input type="password" nbInput fullWidth id="inputPassword2" placeholder="Password">
             </div>
@@ -75,8 +54,8 @@
     <nb-card>
       <nb-card-header>Form without labels</nb-card-header>
       <nb-card-body>
-        <form id="services">
-          <div class="form-group" >
+        <form>
+          <div class="form-group">
             <input type="text" nbInput fullWidth placeholder="Recipients">
           </div>
           <div class="form-group">
@@ -105,6 +84,9 @@
             <input type="password" nbInput fullWidth id="exampleInputPassword1" placeholder="Password">
           </div>
           <div class="form-group">
+             <input _ngcontent-yxd-c20 class="native-input visually-hidden" type="checkbox">
+             <span _ngcontent-yxd-c20 class="custom-checkbox checked">...</span>
+             <span _ngcontent-yxd-c20 class="text">Check me out</span>
             <nb-checkbox>Check me out</nb-checkbox>
           </div>
           <button type="submit" nbButton status="danger">Submit</button>
@@ -184,35 +166,3 @@
     </nb-card>
   </div>
 </div>
-
-  <section id="child">  
-    <ul>
-  <li>About</li>
-  <li>
-    Services
-    <ul class="secondary-nav">
-      <li class="services-1">Web Design</li>
-      <li class="services-2">Logo Design</li>
-      <li class="services-3">
-        Print Design
-        <ul class="tertiary-nav">
-          <li>Signage</li>
-          <li>T-Shirt</li>
-          <li>Business Cards</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Contact</li>
-</ul>
-      </section>
-      <br>
-  <!-- Footer -->
-  <footer id="contact" class="contact box">
-    <h5 >@Copyright 2021</h5>
-     
-  </footer>
-    
-
-</body>
-</html>
