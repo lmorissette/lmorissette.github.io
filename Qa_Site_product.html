@@ -1,0 +1,74 @@
+
+<html>
+<head>..Votre Site. </head>
+<body>
+
+Test pour l'interception For debug History Site 586
+
+<script type="text/javascript" src="http://sitetracking.dev.dev-jfc.hq2.rep/js/Journey/1/WAEAAGZmVTdKS48EAABvSXpTd0JKAgAA/DI.Journey.js"></script>
+<script type="text/javascript">
+function OFSYS_Tracking_onload()
+            {
+                DI.Journey.Set("OFSYSDebug", "1");
+                //DI.Journey.Set("OFSYSDebugProcess", "1");
+                console.log('tracking onload');
+                DI.Journey.Track();
+                OFSYS_Tracker2.Set("idContact", "240");
+               OFSYS_Tracker2.Set("clKey", "QB0wR3");
+
+
+		        
+            DI.Journey.ECommerce.ProductView({
+               idProduct :'8',
+               Product : {//Not required
+               idProduct : '8',
+               idCategory : '3',
+               ProductName : 'product 8',
+               },
+               Category: {//Not required
+               idCategory : '3',
+               CategoryName : 'catégo 3'
+               }}); 
+          DI.Journey.Track();   
+          
+          //DI.Journey.Track('Test');   
+
+          DI.Journey.ECommerce.AddTransaction({
+          idTransaction: '3',
+
+          idCart: '2', //Not required
+
+          affiliation: 'MyStore_Inconnu', //Not required
+          revenue: '50',
+          tax: '57.5',
+          shipping: '10'
+          });
+
+
+          DI.Journey.ECommerce.AddItem({
+          idTransaction: '99',
+          productName: 'product 8',
+          idProduct: '8',
+          category: 'Other',//Not required
+          idCategory: '3',//Not required
+          Price_unit: '100.00',
+          Price_total: '167.50',
+          quantity: '1'
+          });
+
+
+ DI.Journey.ECommerce.SubmitTransaction(); 
+
+
+            }
+
+</script>
+    </br>
+     
+
+     </br>
+     
+</body>
+  
+</html>
+
