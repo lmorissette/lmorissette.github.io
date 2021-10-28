@@ -1,13 +1,12 @@
 
 <html>
-<head>..Votre Site. QAMTL</head>
+<head>..Votre Site. Project 7380 </head>
 <body>
 
-Test pour l'interception For debug History Site Project 7380
+Test pour l'interception For debug History Site 
 
-<script id="DI-Journey-8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA" type="text/javascript" src="https://t.ofsys.com/js/Journey/1/8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA/DI.Journey-min.js">
-	</script>
-	
+<script id="DI-Journey-8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA" type="text/javascript" src="https://t.ofsys.com/js/Journey/1/8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA/DI.Journey-min.js"></script>
+
 function OFSYS_Tracking_onload()
             {
                 DI.Journey.Set("OFSYSDebug", "1");
@@ -20,40 +19,40 @@ function OFSYS_Tracking_onload()
 
 		        
             DI.Journey.ECommerce.ProductView({
-               idProduct :'7',
+               idProduct :'Product_586_Anonyme',
                Product : {//Not required
-               idProduct : '7',
-               idCategory : '3',
-               ProductName : 'product 8',
+               idProduct : '5',
+               idCategory : '1',
+               ProductName : 'product 5',
                },
                Category: {//Not required
-               idCategory : '2',
-               CategoryName : 'catégo 2'
+               idCategory : '1',
+               CategoryName : 'catégo 1'
                }}); 
           DI.Journey.Track();   
           
           //DI.Journey.Track('Test');   
 
           DI.Journey.ECommerce.AddTransaction({
-          idTransaction: '10',
+          idTransaction: '97',
 
-          idCart: '3', //Not required
+          idCart: '1234', //Not required
 
           affiliation: 'MyStore_Inconnu', //Not required
-          revenue: '50',
-          tax: '57.5',
+          revenue: '90',
+          tax: '9',
           shipping: '10'
           });
 
 
           DI.Journey.ECommerce.AddItem({
-          idTransaction: '98',
-          productName: 'product 7',
-          idProduct: '7',
+          idTransaction: '97',
+          productName: 'product 5',
+          idProduct: '5',
           category: 'Other',//Not required
-          idCategory: '2',//Not required
-          Price_unit: '100.00',
-          Price_total: '167.50',
+          idCategory: '1',//Not required
+          Price_unit: '90',
+          Price_total: '109',
           quantity: '1'
           });
 
