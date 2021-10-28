@@ -5,7 +5,7 @@
 
 Test pour l'interception For debug History Site Project 7380
 
-<script type="text/javascript" src="http://sitetracking.dev.dev-jfc.hq2.rep/js/Journey/1/WAEAAGZmVTdKS48EAABvSXpTd0JKAgAA/DI.Journey.js"></script>
+<script type="text/javascript" src="https://lmorissette.github.io/js/Journey/1/WAEAAGZmVTdKS48EAABvSXpTd0JKAgAA/DI.Journey.js"></script>
 <script type="text/javascript">
 function OFSYS_Tracking_onload()
             {
@@ -13,30 +13,30 @@ function OFSYS_Tracking_onload()
                 //DI.Journey.Set("OFSYSDebugProcess", "1");
                 console.log('tracking onload');
                 DI.Journey.Track();
-                OFSYS_Tracker2.Set("idContact", "240");
-               OFSYS_Tracker2.Set("clKey", "QB0wR3");
+                OFSYS_Tracker2.Set("idContact", "600");
+               OFSYS_Tracker2.Set("clKey", "F4DxIi");
 
 
 		        
             DI.Journey.ECommerce.ProductView({
-               idProduct :'8',
+               idProduct :'7',
                Product : {//Not required
-               idProduct : '8',
+               idProduct : '7',
                idCategory : '3',
                ProductName : 'product 8',
                },
                Category: {//Not required
-               idCategory : '3',
-               CategoryName : 'catégo 3'
+               idCategory : '2',
+               CategoryName : 'catégo 2'
                }}); 
           DI.Journey.Track();   
           
           //DI.Journey.Track('Test');   
 
           DI.Journey.ECommerce.AddTransaction({
-          idTransaction: '3',
+          idTransaction: '10',
 
-          idCart: '2', //Not required
+          idCart: '3', //Not required
 
           affiliation: 'MyStore_Inconnu', //Not required
           revenue: '50',
@@ -46,11 +46,11 @@ function OFSYS_Tracking_onload()
 
 
           DI.Journey.ECommerce.AddItem({
-          idTransaction: '99',
-          productName: 'product 8',
-          idProduct: '8',
+          idTransaction: '98',
+          productName: 'product 7',
+          idProduct: '7',
           category: 'Other',//Not required
-          idCategory: '3',//Not required
+          idCategory: '2',//Not required
           Price_unit: '100.00',
           Price_total: '167.50',
           quantity: '1'
