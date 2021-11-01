@@ -1,27 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>ngx-admin Demo Application</title>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QA Montreal [1008] Projet [7380]</title>
+  
 
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-messaging.js"></script>
+  <script src="https://wpn.ofsys.com/T/OFC4/WPS/7380/232/oaGnkU41hjzcUiXCgz8PLwtBlyZikZWc/DI.WebPush-min.js"></script>
+  
 </head>
 <body>
-  <ngx-app>Loading...</ngx-app>
+	
+<p> QAMtl [1008] Projet [7380] </p>
+	
+<label>Adresse courriel du contact</label>
+<input id="email" type="text" style="width:300px;" />
+<input type="button" value="Identifier le contact" onclick="DI.WebPush.Identify('f_EMail', document.getElementById('email').value);" />
+<input type="button" value="Reset identification" onclick="DI.WebPush.ResetIdentify();" />
+<br/><br/>
+<input type="button" value="DI.WebPush.RequestPermission('fr')" onclick="DI.WebPush.RequestPermission('fr');" />
+<input type="button" value="DI.WebPush.RequestPermission('en')" onclick="DI.WebPush.RequestPermission('en');"  />
+<input type="button" value="DI.WebPush.RequestPermission('de')" onclick="DI.WebPush.RequestPermission('de');"  />
+<br><br/>
+<input type="button" value="Reload page" onclick="location.reload();"  /><br/>
+<script>
+										 
+	if(DI.WebPush.isSupported()){
+		document.write("<br><br>DI.WebPush.isSupported() : Navigateur supporte webpush<br>");
+	}
+	else{
+		document.write("DI.WebPush.isSupported() : Navigateur ne supporte pas webpush<br>");
+	}	
+	if(DI.WebPush.isSubscribed()){
+		document.write("DI.WebPush.isSubscribed() : WebPush autorisés<br>");
+	}
+	else{
+		document.write("DI.WebPush.isSubscribed() : WebPush non autorisés<br>");
+	}	
+	if(DI.WebPush.isBlocked()){
+		document.write("DI.WebPush.isBlocked() : WebPush bloqué<br>");
+	}
+	else{
+		document.write("DI.WebPush.isBlocked() : WebPush non bloqué<br>");
+	}
 
-  <style>@-webkit-keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@-moz-keyframes spin{0%{-moz-transform:rotate(0)}100%{-moz-transform:rotate(360deg)}}@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.spinner{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1003;background: #000000;overflow:hidden}  .spinner div:first-child{display:block;position:relative;left:50%;top:50%;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;box-shadow:0 3px 3px 0 rgba(255,56,106,1);transform:translate3d(0,0,0);animation:spin 2s linear infinite}  .spinner div:first-child:after,.spinner div:first-child:before{content:'';position:absolute;border-radius:50%}  .spinner div:first-child:before{top:5px;left:5px;right:5px;bottom:5px;box-shadow:0 3px 3px 0 rgb(255, 228, 32);-webkit-animation:spin 3s linear infinite;animation:spin 3s linear infinite}  .spinner div:first-child:after{top:15px;left:15px;right:15px;bottom:15px;box-shadow:0 3px 3px 0 rgba(61, 175, 255,1);animation:spin 1.5s linear infinite}</style>
-  <div id="nb-global-spinner" class="spinner">
-    <div class="blob blob-0"></div>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-    <div class="blob blob-4"></div>
-    <div class="blob blob-5"></div>
-  </div>
+document.write("<p>Browser CodeName: " + navigator.appCodeName + "</p>");
+document.write("<p>Browser Name: " + navigator.appName + "</p>");
+document.write("<p>Browser Version: " + navigator.appVersion + "</p>");
+document.write("<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>");
+document.write("<p>Browser Language: " + navigator.language + "</p>");
+document.write("<p>Browser Online: " + navigator.onLine + "</p>");
+document.write("<p>Platform: " + navigator.platform + "</p>");
+document.write("<p>User-agent header: " + navigator.userAgent + "</p>");
+</script>
+
 
 </body>
 </html>
