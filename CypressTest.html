@@ -18,6 +18,8 @@
 <p>Tests autos: z_others /dev / happy_path /5_dev_create_send_email_qa_sans_email_key.js</p>
 <a href="[[=Message.Optout("fr-CA");]]">D&eacute;sabonne-moi</a><br />
 <br />
+ [[if(Config.hasTrackingConsent == 1){]]Version web[[}]]
+ <br />
 [[if(Config.isShowMessage == 0 && Config.hasTrackingConsent == 1){]]<a href="[[=Message.WebVersion(true);]]">Voici lien version web</a>[[}]]<br />
 [[=Message.ReadTag();]]</body>
 </html>
