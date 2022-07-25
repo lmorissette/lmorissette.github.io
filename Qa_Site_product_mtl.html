@@ -13,28 +13,28 @@ function OFSYS_Tracking_onload()
                 //DI.Journey.Set("OFSYSDebugProcess", "1");
                 console.log('tracking onload');
                 DI.Journey.Track();
-                OFSYS_Tracker2.Set("idContact", "600");
-               OFSYS_Tracker2.Set("clKey", "F4DxIi");
+                OFSYS_Tracker2.Set("idContact", "9982");
+               OFSYS_Tracker2.Set("clKey", "6LssrV");
 
 
 		        
             DI.Journey.ECommerce.ProductView({
                idProduct :'Product_586_Anonyme',
                Product : {//Not required
-               idProduct : '5',
-               idCategory : '1',
-               ProductName : 'product 5',
+               idProduct : '6',
+               idCategory : '5',
+               ProductName : 'product 6',
                },
                Category: {//Not required
-               idCategory : '1',
-               CategoryName : 'catégo 1'
+               idCategory : '5',
+               CategoryName : 'catégo 5'
                }}); 
           DI.Journey.Track();   
           
           //DI.Journey.Track('Test');   
 
           DI.Journey.ECommerce.AddTransaction({
-          idTransaction: '97',
+          idTransaction: '197',
 
           idCart: '1234', //Not required
 
@@ -46,14 +46,14 @@ function OFSYS_Tracking_onload()
 
 
           DI.Journey.ECommerce.AddItem({
-          idTransaction: '97',
-          productName: 'product 5',
-          idProduct: '5',
+          idTransaction: '197',
+          productName: 'product 6',
+          idProduct: '6',
           category: 'Other',//Not required
-          idCategory: '1',//Not required
-          Price_unit: '90',
-          Price_total: '109',
-          quantity: '1'
+          idCategory: '5',//Not required
+          Price_unit: '190',
+          Price_total: '1109',
+          quantity: '4'
           });
 
 
