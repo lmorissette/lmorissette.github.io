@@ -7,6 +7,7 @@ Test pour l'interception For debug History Site
 
 <script id="DI-Journey-8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA" type="text/javascript" src="https://t.ofsys.com/js/Journey/1/8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA/DI.Journey-min.js"></script>
 
+
 function OFSYS_Tracking_onload()
             {
                 DI.Journey.Set("OFSYSDebug", "1");
@@ -31,31 +32,29 @@ CategoryName : 'catégorie 1'
           
           //DI.Journey.Track('Test');   
 
-          DI.Journey.ECommerce.AddTransaction({
-          idTransaction: '90',
-
-          idCart: '18', //Not required
-
-          affiliation: 'MyStore_Inconnu', //Not required
-          revenue: '100',
-          tax: '9',
-          shipping: '109'
-          });
+DI.Journey.ECommerce.AddTransaction({
+idTransaction: '1234',
+idCart: '1', //Non requis
+affiliation: 'MyStore', //Non requis
+revenue: '10',
+tax: '5',
+shipping: '10'
+});
 
 
-          DI.Journey.ECommerce.AddItem({
-          idTransaction: '95',
-          productName: 'product 10',
-          idProduct: '10',
-          category: '1',//Not required
-          idCategory: '1',//Not required
-          Price_unit: '80',
-          Price_total: '80',
-          quantity: '4'
-          });
+DI.Journey.ECommerce.AddItem({
+idTransaction: '1234',
+productName: 'product 2',
+idProduct: '2',
+category: '1',//Non requis
+idCategory: '1',//Non requis
+Price_unit: '100',
+Price_total: '100',
+quantity: '1'
+});
 
 
- DI.Journey.ECommerce.SubmitTransaction(); 
+DI.Journey.ECommerce.SubmitTransaction(); 
 
 
             }
