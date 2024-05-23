@@ -16,19 +16,17 @@ function OFSYS_Tracking_onload()
                 OFSYS_Tracker2.Set("idContact", "600");
                OFSYS_Tracker2.Set("clKey", "F4DxIi");
 
-
-		        
-            DI.Journey.ECommerce.ProductView({
-               idProduct :'101',
-               Product : {//Not required
-               idProduct : '101',
-               idCategory : '01',
-               ProductName : 'Cypress Test #1',
-               },
-               Category: {//Not required
-               idCategory : '01',
-               CategoryName : 'catégorie 1'
-               }}); 
+DI.Journey.ECommerce.ProductView({
+idProduct :'2',
+Product : {//Non requis
+idProduct : '2',
+idCategory : '1',
+ProductName : 'product 2',
+},
+Category: {//Non requis
+idCategory : '1',
+CategoryName : 'catégorie 1'
+}}); 
           DI.Journey.Track();   
           
           //DI.Journey.Track('Test');   
