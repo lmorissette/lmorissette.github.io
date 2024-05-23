@@ -1,0 +1,74 @@
+
+<html>
+<head>..Votre Site. Project 7380 </head>
+<body>
+
+Test pour l'interception For debug History Site 
+
+<script id="DI-Journey-8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA" type="text/javascript" src="https://t.ofsys.com/js/Journey/1/8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA/DI.Journey-min.js"></script>
+
+function OFSYS_Tracking_onload()
+            {
+                DI.Journey.Set("OFSYSDebug", "1");
+                //DI.Journey.Set("OFSYSDebugProcess", "1");
+                console.log('tracking onload');
+                DI.Journey.Track();
+                OFSYS_Tracker2.Set("idContact", "600");
+               OFSYS_Tracker2.Set("clKey", "F4DxIi");
+
+
+		        
+            DI.Journey.ECommerce.ProductView({
+               idProduct :'101',
+               Product : {//Not required
+               idProduct : '101',
+               idCategory : '01',
+               ProductName : 'Cypress Test #1',
+               },
+               Category: {//Not required
+               idCategory : '01',
+               CategoryName : 'catégorie 1'
+               }}); 
+          DI.Journey.Track();   
+          
+          //DI.Journey.Track('Test');   
+
+          DI.Journey.ECommerce.AddTransaction({
+          idTransaction: '90',
+
+          idCart: '18', //Not required
+
+          affiliation: 'MyStore_Inconnu', //Not required
+          revenue: '100',
+          tax: '9',
+          shipping: '109'
+          });
+
+
+          DI.Journey.ECommerce.AddItem({
+          idTransaction: '95',
+          productName: 'product 10',
+          idProduct: '10',
+          category: '1',//Not required
+          idCategory: '1',//Not required
+          Price_unit: '80',
+          Price_total: '80',
+          quantity: '4'
+          });
+
+
+ DI.Journey.ECommerce.SubmitTransaction(); 
+
+
+            }
+
+</script>
+    </br>
+     
+
+     </br>
+     
+</body>
+  
+</html>
+
