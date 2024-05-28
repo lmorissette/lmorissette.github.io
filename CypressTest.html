@@ -1,28 +1,73 @@
 
 <html>
-<head>Web Page
- 
-  </head>
+<head>..Votre Site. Project 7380 </head>
+<body>
 
-<body><h1>Creation Courriel par page web</h1>
+Test pour l'interception For debug History Site 
 
-<p>Nom du message:&nbsp;[[=Message.MessageName;]]</p>
-&nbsp;
+<script id="DI-Journey-8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA" type="text/javascript" src="https://t.ofsys.com/js/Journey/1/8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA/DI.Journey-min.js"></script>
 
-<p>Contact ID: [[=Contact.idContact;]]</p>
-&nbsp;
+function OFSYS_Tracking_onload()
+            {
+                DI.Journey.Set("OFSYSDebug", "1");
+                //DI.Journey.Set("OFSYSDebugProcess", "1");
+                console.log('tracking onload');
+                DI.Journey.Track();
+                OFSYS_Tracker2.Set("idContact", "600");
+               OFSYS_Tracker2.Set("clKey", "F4DxIi");
 
-<p>Email: [[=Contact.f_EMail;]]</p>
-&nbsp;
 
-<p>id du message: [[=Message.idMessage;]]</p> 
-<p>Type de communication du message: [[=Message.idCategory;]]</p>
-<p>Tests autos: z_others /dev / happy_path /5_dev_create_send_email_qa_sans_email_key.js</p>
-<a href="[[=Message.Optout("fr-CA");]]">D&eacute;sabonne-moi</a><br />
-<br />
- [[if(Config.hasTrackingConsent == 1){]]Version web[[}]]
- <br />
-[[if(Config.isShowMessage == 0 && Config.hasTrackingConsent == 1){]]<a href="[[=Message.WebVersion(true);]]">Voici lien version web</a>[[}]]<br />
-[[=Message.ReadTag();]]</body>
+		        
+            DI.Journey.ECommerce.ProductView({
+               idProduct :'101',
+               Product : {//Not required
+               idProduct : '101',
+               idCategory : '01',
+               ProductName : 'Cypress Test #1',
+               },
+               Category: {//Not required
+               idCategory : '01',
+               CategoryName : 'catégorie 1'
+               }}); 
+          DI.Journey.Track();   
+          
+          //DI.Journey.Track('Test');   
+
+          DI.Journey.ECommerce.AddTransaction({
+          idTransaction: '20',
+
+          idCart: '1234', //Not required
+
+          affiliation: 'MyStore_Inconnu', //Not required
+          revenue: '90',
+          tax: '9',
+          shipping: '10'
+          });
+
+
+          DI.Journey.ECommerce.AddItem({
+          idTransaction: '97',
+          productName: 'Cypress Test #1',
+          idProduct: '101',
+          category: 'Other',//Not required
+          idCategory: '5',//Not required
+          Price_unit: '90',
+          Price_total: '360',
+          quantity: '4'
+          });
+
+
+ DI.Journey.ECommerce.SubmitTransaction(); 
+
+
+            }
+
+</script>
+    </br>
+     
+
+     </br>
+     
+</body>
+  
 </html>
-
