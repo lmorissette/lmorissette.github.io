@@ -54,7 +54,7 @@ nav a:hover
 }
 
 section.banner {
-     background-image: url("../images/MSA_old.jpg");
+     background-image: url("../images/plateau.jpg");
     /*background-color:#999999;*/
     background-position :center;
     background-repeat:no-repeat;    
@@ -219,7 +219,7 @@ section.cl_other ul{  list-style:none;
                         
     }
                           
-  footer.contact{  background-image: url("../images/upfeathers.png");
+  footer.contact{  background-image: url("../images/background1.jpg");
             text-align: center; 
              background-repeat:not-repeat; 
              margin:1px;
