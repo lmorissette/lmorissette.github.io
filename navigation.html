@@ -20,6 +20,16 @@
 </head>
 <body>
 	<script id="DI-Journey-8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA" type="text/javascript" src="https://t.ofsys.com/js/Journey/1/8AMAAGhnZTMyR9QcAAB5Q3ZLYUISBwAA/DI.Journey-min.js"></script>
+	function OFSYS_Tracking_onload()
+            {
+                DI.Journey.Set("OFSYSDebug", "1");
+                DI.Journey.Set("OFSYSDebugProcess", "1");
+                console.log('tracking onload');
+                DI.Journey.Track();
+            }
+
+</script>
+
     <header>
         <!-- Menu -->
         <h1 id="HautdePage"></h1>
