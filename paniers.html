@@ -20,21 +20,22 @@ function OFSYS_Tracking_onload()
                OFSYS_Tracker2.Set("clKey", "F4DxIi");
 // Common usage
 DI.Journey.ECommerce.AddCart({
-idCart: '43234',
-status: 'ValidateAddressStep',//Non requis
+idCart: '1111',
+status: 'Active',//Non requis
 TotalPrice: '50.00'
 });
+       DI.Journey.ECommerce.AddCart({ idCart: '1111', TotalPrice: '50.00', status: 'Active', });
 
 
-DI.Journey.ECommerce.AddCartItem({
-idCart: '1',
-idProduct: '2',
-productName: 'product 2',
-category: 'catégorie 1',//Non requis
-idCategory: '1',//Non requis
-priceunit: '100',
-quantity: '1'
-});
+//DI.Journey.ECommerce.AddCartItem({
+//idCart: '1',
+//idProduct: '2',
+//productName: 'product 2',
+//category: 'catégorie 1',//Non requis
+//idCategory: '1',//Non requis
+//priceunit: '100',
+//quantity: '1'
+//});
 
 
 DI.Journey.ECommerce.SubmitCart();
