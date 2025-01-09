@@ -19,11 +19,11 @@ TotalPrice: '50.00'
 
 
 DI.Journey.ECommerce.AddCartItem({
-idCart: '43234',
-idProduct: '54368',
-productName: 'M-260',
-category: 'PC',//Non requis
-idCategory: '123',//Non requis
+idCart: '1',
+idProduct: '2',
+productName: 'product 2',
+category: 'catégorie 1',//Non requis
+idCategory: '1',//Non requis
 priceunit: '100',
 quantity: '1'
 });
@@ -31,31 +31,28 @@ quantity: '1'
 
 DI.Journey.ECommerce.SubmitCart();
 
-
-
-
 // Additional functions :
 DI.Journey.ECommerce.UpdateCart({
-idCart: '43234',
+idCart: '1',
 status: 'CheckOutStep',//Non requis
 TotalPrice: '50.00'//Non requis
 });
 
 
 DI.Journey.ECommerce.UpdateCartItem({
-idCart: '43234',
-idProduct: '54368',
-productName: 'M-260',//Non requis
+idCart: '1',
+idProduct: '2',
+productName: 'product 2',//Non requis
 category: 'PC',//Non requis
-idCategory: '123',//Non requis
+idCategory: 'catégorie 1',//Non requis
 priceunit: '100',//Non requis
 quantity: '1'//Non requis
 });
 
 
 DI.Journey.ECommerce.RemoveCartItem({
-idCart: '43234',
-idProduct: '54368'
+idCart: '1',
+idProduct: '2'
 });
 
 
