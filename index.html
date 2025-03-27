@@ -16,13 +16,13 @@
 <p> QA Canada [1008] Projet [7380] </p>
 	
 <label>Adresse courriel du contact</label>
-<input id="email" type="text" style="width:300px;" />
-<input type="button" value="Identifier le contact" onclick="DI.WebPush.Identify('f_EMail', document.getElementById('email').value);" />
-<input type="button" value="Reset identification" onclick="DI.WebPush.ResetIdentify();" />
+<input id="email" data_cy="email" type="text" style="width:300px;" />
+<input type="button" value="Identifier le contact" data_cy="Identifier" onclick="DI.WebPush.Identify('f_EMail', document.getElementById('email').value);" />
+<input type="button" value="Reset identification" data_cy="Reset" onclick="DI.WebPush.ResetIdentify();" />
 <br/><br/>
-<input type="button" value="DI.WebPush.RequestPermission('fr')" onclick="DI.WebPush.RequestPermission('fr');" />
-<input type="button" value="DI.WebPush.RequestPermission('en')" onclick="DI.WebPush.RequestPermission('en');"  />
-<input type="button" value="DI.WebPush.RequestPermission('de')" onclick="DI.WebPush.RequestPermission('de');"  />
+<input type="button" value="DI.WebPush.RequestPermission('fr')" data_cy="VersionFR" onclick="DI.WebPush.RequestPermission('fr');" />
+<input type="button" value="DI.WebPush.RequestPermission('en')" data_cy="VersionEN" onclick="DI.WebPush.RequestPermission('en');"  />
+<input type="button" value="DI.WebPush.RequestPermission('de')" data_cy="VersionDE" onclick="DI.WebPush.RequestPermission('de');"  />
 <br><br/>
 <input type="button" value="Reload page" onclick="location.reload();"  /><br/>
 <script>
